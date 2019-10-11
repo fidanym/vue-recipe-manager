@@ -17,14 +17,21 @@ const shortenText = function(str, maxLen) {
 // Format an integer of minutes into XXh XXm or XXm if less than 60
 const formatMinutes = function(minutes) {
     if (minutes <= 60) {
+        minutes = String(minutes).padStart(2, '0');
         return minutes + ' minutes'
     }
 
     let hours = Math.floor(minutes / 60);
     let min = minutes % 60;
-    let hours_word = hours > 1 ? 'hours' : 'hour';
-    let minutes_word = min > 1 ? 'minutes' : 'minutes';
-    return hours + ' ' + hours_word + ' ' + min + ' ' + minutes_word;
+
+    // Uncomment if leading 0 are required
+    // hours = String(hours).padStart(2, '0') + ' ' + (hours > 1 ? 'hours' : 'hour');
+    // min = String(min).padStart(2, '0') + ' ' + (min > 1 ? 'minutes' : 'minute');
+
+    hours = hours + ' ' + (hours > 1 ? 'hours' : 'hour');
+    min = min + ' ' + (min > 1 ? 'minutes' : 'minute');
+
+    return hours + ' ' + min
 };
 
 Vue.filter('shortenText', shortenText);
