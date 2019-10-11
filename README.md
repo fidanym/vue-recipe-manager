@@ -10,3 +10,4 @@ yarn install
 yarn run serve
 ```
 
+Or check it out on Heroku: https://vue-recipe-manager.herokuapp.com/
