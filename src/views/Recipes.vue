@@ -5,7 +5,12 @@
         <h1>Recipes</h1>
       </v-flex>
       <v-flex xs12>
-        <loader :is-loading="isLoading"/>
+        <v-skeleton-loader
+            v-if="isLoading"
+            max-height="370"
+            type="table"
+            transition="fade-transition"
+        ></v-skeleton-loader>
         <recipes-list v-if="!isLoading && this.recipes !== null" :recipes="recipes" class="mt-2"/>
       </v-flex>
     </v-layout>
@@ -14,13 +19,11 @@
 
 <script>
   import RecipesList from "../components/RecipesList";
-  import Loader from "../components/Loader";
 
   export default {
     name: "Recipes",
     components: {
-      recipesList: RecipesList,
-      loader: Loader
+      recipesList: RecipesList
     },
     computed: {
       recipes() {
