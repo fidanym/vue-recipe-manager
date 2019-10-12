@@ -4,9 +4,18 @@
     "name": "Cheese Potatoes",
     "source": "Pinterest",
     "ingredients": [
-      "Potatoes",
-      "Cheese",
-      "Salt"
+      {
+        "name": "Potatoes",
+        "qty": "5"
+      },
+      {
+        "name": "Cheese",
+        "qty": "1"
+      },
+      {
+        "name": "Salt",
+        "qty": "1"
+      }
     ],
     "instructions": "Wash and peel the potatoes then cut them in half. Place them in a medium-sized pan and bake at 240 degrees for 30 minutes",
     "prep_time": "45"
@@ -16,11 +25,22 @@
     "name": "Omelet",
     "source": "Instagram",
     "ingredients": [
-      "Eggs",
-      "Oil",
-      "Salt",
-      "Tomatoes",
-      "Cheese"
+      {
+        "name": "Eggs",
+        "qty": "2"
+      },
+      {
+        "name": "Oil",
+        "qty": "1"
+      },
+      {
+        "name": "Salt",
+        "qty": "1"
+      },
+      {
+        "name": "Cheese",
+        "qty": "1"
+      }
     ],
     "instructions": "Crack eggs over heated pan then add other stuff",
     "prep_time": "10"
@@ -30,11 +50,26 @@
     "name": "Pizza",
     "source": "Facebook",
     "ingredients": [
-      "Flour",
-      "Cheese",
-      "Peppers",
-      "Tomatoes",
-      "Meat"
+      {
+        "name": "Flour",
+        "qty": "1"
+      },
+      {
+        "name": "Cheese",
+        "qty": "1"
+      },
+      {
+        "name": "Peppers",
+        "qty": "1"
+      },
+      {
+        "name": "Tomatoes",
+        "qty": "2"
+      },
+      {
+        "name": "Meat",
+        "qty": "1"
+      }
     ],
     "instructions": "Use the flour to make pizza dough and then put everything else on top and bake it for an hour or so",
     "prep_time": "65"

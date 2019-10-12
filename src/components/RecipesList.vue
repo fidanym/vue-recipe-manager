@@ -26,7 +26,7 @@
           <td>{{ recipe.instructions | shortenText(50) }}</td>
           <td>{{ recipe.prep_time | formatMinutes }}</td>
           <td>
-            <v-btn text icon color="blue">
+            <v-btn :to="{ name: 'recipe', params: { id: recipe.id, recipe: recipe }}" text icon color="blue">
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
           </td>
@@ -56,6 +56,10 @@
     },
     methods: {
       displayIngredients(ingredients) {
+        ingredients = ingredients.map(ingredient => {
+          return ingredient.name
+        })
+
         if (ingredients.length <= 3) {
           return ingredients.join(', ')
         }

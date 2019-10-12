@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Recipes from './views/Recipes.vue'
+import RecipeDetails from "./views/RecipeDetails";
 
 Vue.use(Router)
 
@@ -17,6 +18,12 @@ export default new Router({
       path: '/create',
       name: 'createRecipe',
       component: () => import( './views/CreateRecipe.vue')
+    },
+    {
+      path: '/recipe/:id',
+      name: 'recipe',
+      component: RecipeDetails,
+      props: true
     }
   ]
 })

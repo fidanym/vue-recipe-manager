@@ -3,8 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
+import VueTheMask from 'vue-the-mask'
 
 Vue.config.productionTip = false
+
+Vue.use(VueTheMask)
 
 // Shorten text to a specified limit without truncating the last word
 const shortenText = function(str, maxLen) {

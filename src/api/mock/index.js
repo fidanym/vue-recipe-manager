@@ -1,5 +1,6 @@
 // This is an API mock, just replace static data with axios calls
 import recipes from './data/recipes'
+import ingredients from './data/ingredients'
 
 const getRecipes = function (recipes, time) {
   return new Promise(resolve => {
@@ -21,6 +22,14 @@ const removeRecipe = function (recipes, recipe_id, time) {
   })
 }
 
+const getIngredients = function (ingredients, time) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(ingredients)
+    }, time)
+  })
+}
+
 export default {
   fetchRecipes() {
     return getRecipes(recipes, 500)
@@ -28,5 +37,9 @@ export default {
 
   deleteRecipe(recipe_id) {
     return removeRecipe(recipes, recipe_id, 250)
+  },
+
+  fetchIngredients() {
+    return getIngredients(ingredients, 100)
   }
 }
