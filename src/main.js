@@ -11,7 +11,7 @@ const shortenText = function(str, maxLen) {
     if (str.length <= maxLen) {
         return str
     }
-    return str.substr(0, str.lastIndexOf(' ', maxLen))
+    return str.substr(0, str.lastIndexOf(' ', maxLen)) + '...'
 };
 
 // Format an integer of minutes into XXh XXm or XXm if less than 60

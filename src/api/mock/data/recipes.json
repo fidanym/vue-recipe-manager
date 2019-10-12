@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Cheese Potatoes",
+    "source": "Pinterest",
+    "ingredients": [
+      "Potatoes",
+      "Cheese",
+      "Salt"
+    ],
+    "instructions": "Wash and peel the potatoes then cut them in half. Place them in a medium-sized pan and bake at 240 degrees for 30 minutes",
+    "prep_time": "45"
+  },
+  {
+    "id": "2",
+    "name": "Omelet",
+    "source": "Instagram",
+    "ingredients": [
+      "Eggs",
+      "Oil",
+      "Salt",
+      "Tomatoes",
+      "Cheese"
+    ],
+    "instructions": "Crack eggs over heated pan then add other stuff",
+    "prep_time": "10"
+  },
+  {
+    "id": "3",
+    "name": "Pizza",
+    "source": "Facebook",
+    "ingredients": [
+      "Flour",
+      "Cheese",
+      "Peppers",
+      "Tomatoes",
+      "Meat"
+    ],
+    "instructions": "Use the flour to make pizza dough and then put everything else on top and bake it for an hour or so",
+    "prep_time": "65"
+  }
+]
