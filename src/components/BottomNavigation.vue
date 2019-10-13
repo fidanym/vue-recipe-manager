@@ -1,5 +1,5 @@
 <template>
-  <v-bottom-navigation color="red darken-3">
+  <v-bottom-navigation fixed color="red darken-3">
     <v-btn value="recipes" to="/">
       <span>Recipes</span>
       <v-icon>mdi-view-list</v-icon>
