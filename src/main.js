@@ -20,7 +20,7 @@ const shortenText = function(str, maxLen) {
 // Format an integer of minutes into XXh XXm or XXm if less than 60
 const formatMinutes = function(minutes) {
     if (minutes <= 60) {
-        minutes = String(minutes).padStart(2, '0');
+        //minutes = String(minutes).padStart(2, '0');
         return minutes + ' minutes'
     }
 

@@ -51,6 +51,7 @@
                     <v-text-field
                         v-model="prep_time"
                         label="Preparation time"
+                        placeholder="HH:MM"
                         color="red"
                         v-mask="'##:##'"
                         :rules="standardRules"
@@ -94,6 +95,7 @@
                         label="Instructions"
                         hint="Give instructions on preparing this recipe"
                         color="red"
+                        rows="35"
                         :rules="standardRules"
                         filled
                     ></v-textarea>
@@ -171,6 +173,10 @@
       },
 
       formatTimeInMinutes(time_string) {
+        if (time_string.length <= 2) {
+          return parseInt(time_string)
+        }
+
         let time = time_string.split(':');
         return parseInt(time[0]) * 60 + parseInt(time[1]);
       }

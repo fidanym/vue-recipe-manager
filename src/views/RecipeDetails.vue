@@ -3,7 +3,7 @@
     <confirm-dialog ref="confirm"></confirm-dialog>
     <v-layout row wrap>
       <v-flex xs12>
-        <h1>{{ recipe.name }} <small>from {{ recipe.source }}</small></h1>
+        <h1>{{ recipe.name }} <small>{{ recipe.source.length ? 'from ' + recipe.source : '' }}</small></h1>
         <v-divider class="mb-2"></v-divider>
       </v-flex>
       <v-flex xs12 md6>
