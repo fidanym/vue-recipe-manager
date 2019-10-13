@@ -8,10 +8,10 @@
         <v-form ref="form">
           <v-container>
             <v-row>
-              <v-col md="6" sm="12">
+              <v-col cols="12" md="4" sm="12">
 
                 <v-row>
-                  <v-col md="6" sm="12">
+                  <v-col md="10" sm="12">
                     <v-text-field
                         v-model="name"
                         label="Recipe name"
@@ -22,7 +22,7 @@
                 </v-row>
 
                 <v-row>
-                  <v-col md="6" sm="12">
+                  <v-col md="10" sm="12">
                     <v-text-field
                         v-model="source"
                         label="Source"
@@ -32,7 +32,7 @@
                 </v-row>
 
                 <v-row>
-                  <v-col md="3" sm="6">
+                  <v-col md="4" sm="6">
                     <v-text-field
                         v-model="prep_time"
                         label="Preparation time"
@@ -45,14 +45,19 @@
 
               </v-col>
 
-              <v-col md="6" sm="12">
-                <v-textarea
-                    v-model="instructions"
-                    label="Instructions"
-                    hint="Give instructions on preparing this recipe"
-                    color="red"
-                    :rules="standardRules"
-                ></v-textarea>
+              <v-col cols="12" md="8" sm="12">
+
+                <v-row>
+                  <v-col>
+                    <v-textarea
+                        v-model="instructions"
+                        label="Instructions"
+                        hint="Give instructions on preparing this recipe"
+                        color="red"
+                        :rules="standardRules"
+                    ></v-textarea>
+                  </v-col>
+                </v-row>
               </v-col>
             </v-row>
           </v-container>
